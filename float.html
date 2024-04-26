@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Float</title>
+<style>
+  .container {
+    width: 400px;
+    height: 200px;
+    background-color: lightblue;
+    border: 1px solid black;
+    overflow: auto;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+  }
+
+  .box.right {
+    float: right;
+  }
+
+  .box.none {
+    float: none;
+  }
+
+  .box.inherit {
+    float: inherit;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">Flotar a la izquierda</div>
+  <div class="box right">Flotar a la derecha</div>
+  <div class="box none">Sin flotar</div>
+  <div class="box inherit">Heredar valor de flotación</div>
+</div>
+
+</body>
+</html>

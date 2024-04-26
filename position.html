@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Posicionamiento</title>
+<style>
+  .static {
+    position: static;
+    background-color: lightblue;
+    padding: 10px;
+  }
+
+  .relative {
+    position: relative;
+    background-color: lightgreen;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .fixed {
+    position: fixed;
+    background-color: lightcoral;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .absolute {
+    position: absolute;
+    background-color: lightyellow;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 20px;
+    background-color: lightsalmon;
+    padding: 10px;
+  }
+
+  .container {
+    height: 300px;
+    overflow-y: scroll;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="static">Posicionamiento estático</div>
+  <div class="relative">Posicionamiento relativo</div>
+  <div class="fixed">Posicionamiento fijo</div>
+  <div class="absolute">Posicionamiento absoluto</div>
+  <div class="sticky">Posicionamiento pegajoso</div>
+</div>
+
+<p>Desplázate hacia abajo</p>
+
+</body>
+</html>

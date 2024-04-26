@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desbordamiento</title>
+<style>
+  .container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  .visible {
+    overflow: visible;
+    background-color: lightblue;
+  }
+
+  .hidden {
+    overflow: hidden;
+    background-color: lightgreen;
+  }
+
+  .scroll {
+    overflow: scroll;
+    background-color: lightcoral;
+  }
+
+  .auto {
+    overflow: auto;
+    background-color: lightyellow;
+  }
+</style>
+</head>
+<body>
+
+<div class="container visible">
+  <p>Overflow: visible</p>
+  <p>puede desbordar el contenedor, pero se muestra fuera de él.</p>
+</div>
+
+<div class="container hidden">
+  <p>Overflow: hidden</p>
+  <p>puede desbordar el contenedor, pero se oculta.</p>
+</div>
+
+<div class="container scroll">
+  <p>Overflow: scroll</p>
+  <p>puede desbordar el contenedor y se muestra con barras de desplazamiento.</p>
+</div>
+
+<div class="container auto">
+  <p>Overflow: auto</p>
+  <p>puede desbordar el contenedor y se muestra con barras de desplazamiento solo cuando es necesario.</p>
+</div>
+
+</body>
+</html>
